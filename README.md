@@ -55,8 +55,10 @@ Returns the current length of the _Queue_.
 A _Queue_ is a standard class which can be instantiated with the `new` keyword:
 
 ```js
-// Build a new Queue with a maximum length of 10 items
+// Build a new Queue with a maximum length of 10 values
 const queue = new Queue(10);
+// Get the length of the Queue
+let length = Queue.length; // 0
 // Add some values to the Queue
 queue.enqueue(1);
 queue.enqueue('two');
@@ -66,6 +68,8 @@ queue.enqueue(false);
 if (!queue.isFull()) {
   queue.enqueue('FIVE');
 }
+// Get the length of the Queue
+length = Queue.length; // 5
 // Get the Queue as an array
 const queueAsArray = queue.toArray(); // [1, 'two', { three: 'three' }, false, 'FIVE']
 // Remove the values from the Queue
@@ -77,9 +81,17 @@ queue.dequeue(); // false
 if (!queue.isEmpty()) {
   queue.dequeue(); // 'FIVE'
 }
+// Get the length of the Queue
+length = Queue.length; // 0
 ```
 
 ## Testing
+
+Use the following command to run all the tests described below together:
+
+```sh
+$ docker-compose run --rm app npm test
+```
 
 ### _Testing >_ Commit messages
 
