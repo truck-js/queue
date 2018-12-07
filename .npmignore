@@ -11,10 +11,12 @@ src/
 .eslintignore
 .eslintrc
 .gitignore
+.huskyrc.json
 .npmignore
 .travis.yml
 
 babel.config.js
+commitlint.config.js
 docker-compose.yml
 Dockerfile
 jest.config.json
