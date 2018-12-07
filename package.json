@@ -39,5 +39,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/truck-js/queue.git"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
