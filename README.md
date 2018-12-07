@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/truck-js/queue.svg?branch=master)](https://travis-ci.org/truck-js/queue)
+[![Coverage Status](https://coveralls.io/repos/github/truck-js/queue/badge.svg?branch=master)](https://coveralls.io/github/truck-js/queue?branch=master)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+
 # Queue
 
 A JavaScript _Queue_ data structure.
