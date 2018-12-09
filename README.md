@@ -25,12 +25,12 @@ is _65535_.
 
 ### _Methods >_ `dequeue(): any` (_O(1)_)
 
-Removes a value from the _Queue_ and returns it.
+Removes the bottom (first inserted) value from the _Queue_ and returns it.
 
-### _Methods >_ `enqueue(value: any)` (_O(1)_)
+### _Methods >_ `enqueue(value: any): void` (_O(1)_)
 
-Adds a value to the _Queue_. Throws a `RangeError` when the addition exceeds the maximum length
-allowed (defined in the `constructor`).
+Adds a value to the top of the _Queue_. Throws a `RangeError` when the addition exceeds the maximum
+length allowed (defined in the `constructor`).
 
 ### _Methods >_ `isEmpty(): boolean` (_O(1)_)
 
@@ -50,7 +50,7 @@ Returns the _Queue_ as an array.
 
 ## Properties
 
-### _Properties >_ `.length`
+### _Properties >_ `.length: number`
 
 Returns the current length of the _Queue_.
 
