@@ -1,6 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const Benchmark = require('benchmark');
 
+// eslint-disable-next-line import/no-unresolved
 const Queue = require('../lib/index').default;
 
 const suite = new Benchmark.Suite();
